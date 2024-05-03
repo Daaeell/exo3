@@ -16,77 +16,106 @@
 
     <header class="container-xl">
         <!-- ---------------------------------------- -->
-        <div id="main_nav" class="row">
+        <div id="main_nav" class="row align-items-center">
 
             <!-- --------------------- -->
 
             <div id="logo" class="col-sm-3">
                 <img src="./Images/logo.png" width="100%" height="100%">
             </div>
+
+            <!-- --------------------- -->
             
-            <ul id="navdesk" class="col nav justify-content-end align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link signin" href="#">SIGN IN | REGISTER</a>
+            <ul id="navdesk" class="col nav align-items-center">
+
+                <li class="nav-item col-6 searchbar">
+                  <form class="container-fluid">
+                    <div class="input-group ">
+                      <span class="input-group-text searchbar_style_contain" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                      </span>
+                      <input type="text" class="searchbar_style form-control" aria-label="Search" aria-describedby="basic-addon1">
+                    </div>
+                  </form>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+
+                <li class="nav-item d-flex pt-2">
+                  <a class="nav-link signin text_b bold" href="">SIGN IN | REGISTER</a>
+                  <a class="nav-link text_b" href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
                   </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link text_b" href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>
                   </a>
                 </li>
+                
             </ul>
 
-            <div id="navphone" class="hamburger-menu">
+            <!-- --------------------- -->
+
+            <div id="navphone" class="col hamburger-menu align-self-center">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
                   <span></span>
                 </label>
             
                 <ul class="menu__box">
-                  <li><a class="menu__item text_w" href="#">Home</a></li>
-                  <li><a class="menu__item text_w" href="#">About</a></li>
-                  <li><a class="menu__item text_w" href="#">Team</a></li>
-                  <li><a class="menu__item text_w" href="#">Contact</a></li>
 
-                  <li class="nav-item icontab">
+                  <li class="nav-item icontab">                   
                     <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round">
-                        <circle cx="12" cy="8" r="5"/>
-                        <path d="M20 21a8 8 0 0 0-16 0"/>
-                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E9E4DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>                   
                     </button>
                     <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-plus"><path d="M2 21a8 8 0 0 1 13.292-6"/>
-                        <circle cx="10" cy="8" r="5"/><path d="M19 16v6"/>
-                        <path d="M22 19h-6"/>
-                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E9E4DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>                     
                     </button>
                   </li>
+
+                  <li><a class="menu__item text_bg" href="#">SIGN IN | REGISTER</a></li>
+
+                  <br>
+
+                  <li class="nav-item col-6 searchbar_res">
+                    <form class="container">
+                      <div class="input-group">
+                        <span class="input-group-text searchres_style_contain" id="basic-addon1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E9E4DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        </span>
+                        <input type="text" class="form-control searchres_style" aria-label="Search" aria-describedby="basic-addon1">
+                      </div>
+                    </form>
+                  </li>
+
+                  <br>
+
+                  <li><a class="menu__item text_bg" href="#">SPECIAL OFFERS</a></li>
+                  <li><a class="menu__item text_bg" href="#">CATEGORIES</a></li>
+                  <li><a class="menu__item text_bg" href="#">NEW ARRIVALS</a></li>
+                  <li><a class="menu__item text_bg" href="#">BEST-SELLERS</a></li>
+
                 </ul>
 
               </div>
-            <!-- --------------------- -->
 
         </div>
+
         <!-- ---------------------------------------- -->
+
+        <br>
+
         <div id="sec_nav" class="container-fluid text-center">
 
-            <ul class="row nav justify-content-center">
-                <li class="col-3 nav-item">
-                  <a class="nav-link" href="#">SPECIAL OFFERS</a>
+            <ul class="row nav nav-underline justify-content-center">
+                <li class="col-2 nav-item">
+                  <a class="nav-link text_b bold" href="">SPECIAL OFFERS</a>
                 </li>
                 <li class="col-3 nav-item">
-                  <a class="nav-link" href="#">CATEGORIES</a>
+                  <a class="nav-link text_b bold" href="">CATEGORIES</a>
                 </li>
                 <li class=" col-3 nav-item">
-                  <a class="nav-link" href="#">NEW ARRIVALS</a>
+                  <a class="nav-link text_b bold" href="">NEW ARRIVALS</a>
                 </li>
-                <li class="col-3 nav-item">
-                  <a class="nav-link" href="#">BEST-SELLERS</a>
+                <li class="col-2 nav-item">
+                  <a class="nav-link text_b bold" href="">BEST-SELLERS</a>
                 </li>
             </ul>
 

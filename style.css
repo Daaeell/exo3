@@ -3,20 +3,24 @@ body {
     background-color: #E9E4DF ;
 }
 #main_nav {
-    border: 2px solid red;
     justify-content: space-between;
+    border-bottom: 1px solid black;
 }
 #logo {
     width: 12%;
+    padding-left: 0%;
     height: auto;
+}
+#navdesk {
+    justify-content: space-between;
+    
 }
 #navphone {
     display: none;
+    margin-top: 20px;
+    
 }
-.signin {
-    padding-left: 30px;
-    padding-right: 30px;
-}
+/* ----  ----  ----  ---- Menu burger ----  ----  ----  ---- */
 
 #menu__toggle {
     opacity: 0;
@@ -37,7 +41,7 @@ body {
 }
 .menu__btn {
     position: absolute;
-    color: #ffffff;
+    color: #000000;
     right: 10px;
     width: 26px;
     height: 26px;
@@ -51,10 +55,10 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #000000;
     transition-duration: .25s;
 }
-.menu__btn > span::before {
+.menu__btn > span::before { 
     content: '';
     top: -8px;
 }
@@ -75,7 +79,7 @@ body {
     margin: 0;
     padding: 10% 0;
     list-style: none;
-    background-color: #000000;
+    background-color: #212227;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
 }
@@ -92,3 +96,71 @@ body {
 .menu__item:hover {
     background-color: #ffffff;
 }  
+
+/* ----  ----  ----  ----  ----  ----  ----  ----  ---- */
+
+.searchbar {
+    margin-left: 11%;
+}
+.searchbar_style {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.searchbar_style:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+}
+.searchbar_style_contain {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 20px;
+}
+.signin {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* ----  ----  ----  ----  ---- */
+
+.searchres_style {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #E9E4DF;
+    border-radius: 20px;
+}
+.searchres_style:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #E9E4DF;
+}
+.searchres_style_contain {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #E9E4DF;
+    border-top: 2px solid #E9E4DF;
+    border-left: 2px solid #E9E4DF;
+    border-radius: 20px;
+}
+
+
+/* ----  ----  ----  ----  ----  ----  ----  ----  ---- */
+
+.text_bg {
+    color: #E9E4DF ;
+}
+.text_bg:hover {
+    background-color: #212227;
+    color: #fafafa ;
+}
+.text_b {
+    color: #000000;
+}
+.text_b:hover {
+    color: #000000;
+}
+.bold {
+    font-weight: 600;
+}
+.extrabold {
+    font-weight: 800;
+}
