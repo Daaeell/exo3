@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    #navdesk {
+        display: none;
+    }
+    #sec_nav {
+        display: none;
+    }
+    #navphone {
+        display: block;
+    }
+}
+@media screen and (max-height: 1024px) {
+    
+}
